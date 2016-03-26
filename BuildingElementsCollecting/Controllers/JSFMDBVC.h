@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSBaseRootVC.h"
 
-@interface JSFMDBVC : UIViewController
+@interface JSFMDBVC : JSBaseRootVC
 
 @end

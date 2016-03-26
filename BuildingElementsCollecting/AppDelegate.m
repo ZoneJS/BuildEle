@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "JSBaseRootVC.h"
+#import "JSSideVC.h"
+#import "MMDrawerController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,9 +20,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UIViewController *VC = [[JSBaseRootVC alloc] init];
+    VC.view.backgroundColor = [UIColor greenColor];
+    UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:VC];
+    MMDrawerController *rootVC = [[MMDrawerController alloc] initWithCenterViewController:navCtrl leftDrawerViewController:[[JSSideVC alloc] init]];
+    rootVC.maximumLeftDrawerWidth = 200;
+    [UIApplication sharedApplication].delegate.window.rootViewController = rootVC;
+
+    [self.window makeKeyAndVisible];
     
-    
-    // Override point for customization after application launch.
     return YES;
 }
 

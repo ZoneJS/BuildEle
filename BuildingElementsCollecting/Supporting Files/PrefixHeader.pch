@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  BuildingElementsCollecting
+//
+//  Created by 张军帅 on 16/3/23.
+//  Copyright © 2016年 zjs. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
