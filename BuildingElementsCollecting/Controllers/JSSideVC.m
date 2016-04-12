@@ -11,6 +11,7 @@
 #import "JSFMDBVC.h"
 #import "JSImageVC.h"
 #import "JSTextVC.h"
+#import "JSRuntimeTestVC.h"
 
 #import "UIViewController+MMDrawerController.h"
 
@@ -27,7 +28,8 @@
     
     ctrlsArr = @[@"JSFMDBVC",
                  @"JSImageVC",
-                 @"JSTextVC"];
+                 @"JSTextVC",
+                 @"JSRuntimeTestVC"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,7 +53,8 @@
 {
     NSArray *titlesArr = @[@"fmdb",
                            @"image",
-                           @"text"];
+                           @"text",
+                           @"runtime"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     
     if (cell == nil) {

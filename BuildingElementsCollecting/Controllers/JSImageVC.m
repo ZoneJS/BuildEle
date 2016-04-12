@@ -7,6 +7,8 @@
 //
 
 #import "JSImageVC.h"
+
+#import "JSWebImgVC.h"
 #import "YYKit.h"
 
 @interface JSImageVC () <UIGestureRecognizerDelegate>{
@@ -62,8 +64,20 @@
     [self addImg:img size:CGSizeZero text:nil];
     
     [self addSpriteSheetImg];
+    
+    [self setRightNavItem];
     // Do any additional setup after loading the view.
 }
+
+- (void)setRightNavItem {
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(pushWebImgVC)];
+    self.
+    self.navigationItem.rightBarButtonItem = item;
+}
+- (void)pushWebImgVC {
+    [self.navigationController pushViewController:[[JSWebImgVC alloc] init] animated:YES];
+}
+
 //从一张图中截取,我还考虑用frameImg，不知道 怎么截
 - (void)addSpriteSheetImg {
     NSString *path = [[NSBundle mainBundle].bundlePath stringByAppendingString:@"/ResourceTwitter.bundle/fav02l-sheet@2x.png"];
@@ -173,6 +187,8 @@
     
     panG.delegate = self;
     [imgView addGestureRecognizer:panG];
+    
+    
 }
 //TODO: 干嘛用？？
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
