@@ -29,7 +29,8 @@
     ctrlsArr = @[@"JSFMDBVC",
                  @"JSImageVC",
                  @"JSTextVC",
-                 @"JSRuntimeTestVC"];
+                 @"JSRuntimeTestVC",
+                 @"JSUMengVC"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +55,8 @@
     NSArray *titlesArr = @[@"fmdb",
                            @"image",
                            @"text",
-                           @"runtime"];
+                           @"runtime",
+                           @"友盟分享"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     
     if (cell == nil) {

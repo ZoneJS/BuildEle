@@ -12,6 +12,8 @@
 #import "JSSideVC.h"
 #import "MMDrawerController.h"
 
+#import "UMSocial.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,6 +22,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [UMSocialData setAppKey:@"573174b2e0f55ab28a0006a7"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UIViewController *VC = [[JSBaseRootVC alloc] init];
     VC.view.backgroundColor = [UIColor greenColor];

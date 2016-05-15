@@ -7,7 +7,11 @@
 //
 
 #import "JSBaseVC.h"
+//#import <UIKit/UIKit.h>
 
 @interface JSBaseRootVC : JSBaseVC
+
+@property (nonatomic, strong) NSArray *titlesArr;
+@property (nonatomic, strong) NSArray *ctrlsArr;
 
 @end
