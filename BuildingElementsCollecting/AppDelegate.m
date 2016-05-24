@@ -22,6 +22,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //征求推送许可
+    if ([[UIApplication sharedApplication] currentUserNotificationSettings].types != UIUserNotificationTypeNone) {
+        
+    }
     [UMSocialData setAppKey:@"573174b2e0f55ab28a0006a7"];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -35,6 +39,13 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)addLocalNotification {
+    //定义本地通知对象
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    //设置调用时间立即触发
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

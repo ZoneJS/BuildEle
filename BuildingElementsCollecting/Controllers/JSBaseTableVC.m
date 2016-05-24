@@ -1,41 +1,31 @@
 //
-//  JSSideVC.m
+//  JSBaseTableVCTableViewController.m
 //  BuildingElementsCollecting
 //
-//  Created by 张军帅 on 16/3/23.
+//  Created by 张军帅 on 16/5/15.
 //  Copyright © 2016年 zjs. All rights reserved.
 //
 
-#import "JSSideVC.h"
-#import "MMDrawerController.h"
-#import "JSFMDBVC.h"
-#import "JSImageVC.h"
-#import "JSTextVC.h"
-#import "JSRuntimeTestVC.h"
+#import "JSBaseTableVC.h"
+#import "UITableView+JSTouch.h"
 
-#import "UIViewController+MMDrawerController.h"
-
-@interface JSSideVC () {
-    NSArray *ctrlsArr;
-}
+@interface JSBaseTableVC ()
 
 @end
 
-@implementation JSSideVC
+@implementation JSBaseTableVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ctrlsArr = @[@"JSFMDBVC",
-                 @"JSTestImgRTVC",
-                 @"JSTextVC",
-                 @"JSRuntimeTestVC",
-                 @"JSUMengVC"];
-    
-    //测试
-    Class class = NSClassFromString(ctrlsArr[1]);
-    UINavigationController *nav = [self vcWrappedWithNav:[[class alloc] init]];
-    [self.mm_drawerController setCenterViewController:nav withCloseAnimation:YES completion:nil];
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];//navigationBar的颜色
+    self.navigationController.navigationBar.tintColor =
+    [UIColor whiteColor];//返回按钮的颜色
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = @"";
+    self.navigationItem.backBarButtonItem = backItem;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,37 +41,35 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return ctrlsArr.count;
+    return _titlesArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *titlesArr = @[@"fmdb",
-                           @"UI",
-                           @"text",
-                           @"runtime",
-                           @"友盟分享"];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
-        cell.textLabel.text = titlesArr[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JS"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"JS"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    
+    cell.textLabel.text = _titlesArr[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Class class = NSClassFromString(ctrlsArr[indexPath.row]);
-    UINavigationController *nav = [self vcWrappedWithNav:[[class alloc] init]];
-    [self.mm_drawerController setCenterViewController:nav withCloseAnimation:YES completion:nil];
+    if (self.ctrlsArr) {
+        Class cls = NSClassFromString(_ctrlsArr[indexPath.row]);
+        if (cls) {
+            [self.navigationController pushViewController:[[cls alloc] init] animated:YES];
+        }
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    } else if (_selectorsArr) {
+        NSString *s = _selectorsArr[indexPath.row];
+        [self performSelector:NSSelectorFromString(s)];
+    }
 }
 
-- (UINavigationController *)vcWrappedWithNav:(UIViewController *)VC {
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:VC];
-    return nav;
-}
+
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

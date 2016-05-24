@@ -22,4 +22,9 @@
 
 - (NSArray *)allProperties;
 
+- (void)testMethod;
+
+- (void)method4swap;
+
++ (void)classTestMethod;
 @end
