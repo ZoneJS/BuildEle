@@ -30,7 +30,8 @@
                  @"JSTestImgRTVC",
                  @"JSTextVC",
                  @"JSRuntimeTestVC",
-                 @"JSUMengVC"];
+                 @"JSUMengVC",
+                 @"JSBasisVC"];
     
     //测试
     Class class = NSClassFromString(ctrlsArr[1]);
@@ -61,7 +62,8 @@
                            @"UI",
                            @"text",
                            @"runtime",
-                           @"友盟分享"];
+                           @"友盟分享",
+                           @"基础"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     
     if (cell == nil) {

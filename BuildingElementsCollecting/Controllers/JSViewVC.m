@@ -11,6 +11,7 @@
 @interface JSViewVC () {
     UIView *_back;
     CALayer *_testL;
+    UIImageView *_imgV;
 }
 
 @end
@@ -40,7 +41,8 @@
                        @"performTransitionTest",
                        @"手动管理动画",
                        @"开关门动画",
-                       @"手势动画"];
+                       @"手势动画",
+                       @"镂空图像hollowView"];
     
     self.selectorsArr = @[@"compareMaskBounds",
                           @"compositeTransform",
@@ -60,7 +62,8 @@
                           @"performTransitionTest",
                           @"handAct",
                           @"doorAct",
-                          @"doorActWithPanGesture"];
+                          @"doorActWithPanGesture",
+                          @"hollowView"];
     // Do any additional setup after loading the view.
 }
 
@@ -593,6 +596,50 @@
     CATransform3D t = CATransform3DIdentity;
     t = CATransform3DRotate(t, x * M_PI_2, 0, 1, 0);
     _testL.transform = t;
+}
+
+//镂空
+- (void)hollowView {
+//    UIGraphicsBeginImageContext(CGSizeMake(150, 150));
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(kScreenWidth, kScreenHeight), NO, 1.0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+//    CGContextSetRGBFillColor(ctx, 0,1,1,0.5);
+    CGContextSetFillColorWithColor(ctx, [[UIColor blackColor] colorWithAlphaComponent:.6].CGColor);
+    CGContextFillRect(ctx, [UIScreen mainScreen].bounds);
+    
+//    CGContextClearRect(ctx, CGRectMake(50, 100, 50, 50));
+    CGContextSetFillColorWithColor(ctx, [UIColor clearColor].CGColor);
+    CGContextAddEllipseInRect(ctx, CGRectMake(50, 250, 50, 50));
+    CGContextAddRect(ctx, CGRectMake(110, 100, 50, 50));
+//    CGContextStrokeEllipseInRect(ctx, CGRectMake(50, 200, 50, 50));
+    CGContextSetBlendMode(ctx, kCGBlendModeClear);
+    CGContextFillPath(ctx);
+    
+    UIImage* returnimage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    UIImageView *imgV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    imgV.image = returnimage;
+    imgV.layer.contents = (__bridge id)returnimage.CGImage;
+    
+    //TODO: 研究怎么使用mask实现镂空效果
+//    UIBezierPath *path = [UIBezierPath bezierPathWithRect:[UIScreen mainScreen].bounds];
+//    CAShapeLayer *l = [CAShapeLayer layer];
+//    l.path = path.CGPath;
+//    l.fillColor = [UIColor clearColor].CGColor;
+//    l.lineDashPattern = @[@2, @2];
+//    l.strokeColor = [UIColor blackColor].CGColor;
+//    imgV.layer.mask = l;
+//    imgV.layer.masksToBounds = YES;
+    
+    [[UIApplication sharedApplication].keyWindow addSubview:imgV];
+    UITapGestureRecognizer *g = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imgtapAct)];
+    [imgV addGestureRecognizer:g];
+    _imgV = imgV;
+    imgV.userInteractionEnabled = YES;
+}
+- (void)imgtapAct {
+    [_imgV removeFromSuperview];
 }
 /*
 #pragma mark - Navigation

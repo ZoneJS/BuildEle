@@ -57,6 +57,10 @@
 		704878C91CF305F200EB8CED /* JSPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 704878C81CF305F200EB8CED /* JSPushVC.m */; };
 		704878CD1CF3D6B400EB8CED /* JSChildTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 704878CC1CF3D6B400EB8CED /* JSChildTVC.m */; };
 		704878D01CF3D75400EB8CED /* JSParentTController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704878CF1CF3D75400EB8CED /* JSParentTController.m */; };
+		704878D71CF576DF00EB8CED /* JSCaculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 704878D61CF576DF00EB8CED /* JSCaculateManager.m */; };
+		704A1A961D0109F3002C5009 /* JSReactivePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 704A1A951D0109F3002C5009 /* JSReactivePerson.m */; };
+		704A1A991D010A2C002C5009 /* NSObject+JSKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 704A1A981D010A2C002C5009 /* NSObject+JSKVO.m */; };
+		704A1A9C1D010BF2002C5009 /* JSKVONotifyingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 704A1A9B1D010BF2002C5009 /* JSKVONotifyingPerson.m */; };
 		705358651CA25438001248C9 /* JSBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 705358641CA25438001248C9 /* JSBaseVC.m */; };
 		705358691CA255C9001248C9 /* JSSideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 705358681CA255C9001248C9 /* JSSideVC.m */; };
 		7053586C1CA25E78001248C9 /* JSLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7053586B1CA25E78001248C9 /* JSLoginVC.m */; };
@@ -64,6 +68,8 @@
 		705B4EEE1CE8A41900DBD955 /* JSViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B4EED1CE8A41900DBD955 /* JSViewVC.m */; };
 		705B4EF21CE8AADE00DBD955 /* JSTableV.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B4EF11CE8AADE00DBD955 /* JSTableV.m */; };
 		705B4EF51CE8AB7600DBD955 /* JSBaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B4EF41CE8AB7600DBD955 /* JSBaseTableVC.m */; };
+		705E42D61CFFBB8F009938EC /* NSObject+JSCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E42D51CFFBB8F009938EC /* NSObject+JSCalculate.m */; };
+		7075606E1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7075606D1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.m */; };
 		707AE6141CF294CD00195C0F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 707AE6131CF294CD00195C0F /* UIImage+Image.m */; };
 		707AE6171CF29CFD00195C0F /* NSObject+JSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 707AE6161CF29CFD00195C0F /* NSObject+JSProperty.m */; };
 		707C44001CED92A500C5E548 /* JSTenStartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 707C43FF1CED92A500C5E548 /* JSTenStartVC.m */; };
@@ -96,7 +102,16 @@
 		70B8DC271CE1C39F003B71B2 /* JSUMengShanreTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8DC261CE1C39F003B71B2 /* JSUMengShanreTestVC.m */; };
 		70B8DC2A1CE1CFC4003B71B2 /* JSUMengVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B8DC291CE1CFC4003B71B2 /* JSUMengVC.m */; };
 		70C69C171CA269DA00FAD442 /* JSBaseRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C69C161CA269DA00FAD442 /* JSBaseRootVC.m */; };
+		70DBB1981D0E3FC80054A6A6 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70DBB1971D0E3FC80054A6A6 /* flags.plist */; };
+		70DBB19B1D0E420C0054A6A6 /* JSFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DBB19A1D0E420C0054A6A6 /* JSFlag.m */; };
+		70DBB19E1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DBB19D1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.m */; };
+		70DBB1A61D112CBA0054A6A6 /* JSRACLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DBB1A51D112CBA0054A6A6 /* JSRACLoginVC.m */; };
+		70DBB1AB1D113D930054A6A6 /* JSLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DBB1AA1D113D930054A6A6 /* JSLoginViewModel.m */; };
+		70DBB1AE1D1145AB0054A6A6 /* JSRequestVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DBB1AD1D1145AB0054A6A6 /* JSRequestVM.m */; };
 		70E1C1061CA66705001472FA /* JSWebImgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1C1051CA66705001472FA /* JSWebImgVC.m */; };
+		70FDF29B1CFFBEB300E1496E /* JSBasisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF29A1CFFBEB300E1496E /* JSBasisVC.m */; };
+		70FDF29E1CFFBEF100E1496E /* JSFRPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF29D1CFFBEF100E1496E /* JSFRPVC.m */; };
+		70FDF2A81CFFC50900E1496E /* JSMan.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FDF2A71CFFC50900E1496E /* JSMan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +193,14 @@
 		704878CC1CF3D6B400EB8CED /* JSChildTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSChildTVC.m; sourceTree = "<group>"; };
 		704878CE1CF3D75400EB8CED /* JSParentTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSParentTController.h; sourceTree = "<group>"; };
 		704878CF1CF3D75400EB8CED /* JSParentTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSParentTController.m; sourceTree = "<group>"; };
+		704878D51CF576DF00EB8CED /* JSCaculateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCaculateManager.h; sourceTree = "<group>"; };
+		704878D61CF576DF00EB8CED /* JSCaculateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCaculateManager.m; sourceTree = "<group>"; };
+		704A1A941D0109F3002C5009 /* JSReactivePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSReactivePerson.h; sourceTree = "<group>"; };
+		704A1A951D0109F3002C5009 /* JSReactivePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSReactivePerson.m; sourceTree = "<group>"; };
+		704A1A971D010A2C002C5009 /* NSObject+JSKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSKVO.h"; sourceTree = "<group>"; };
+		704A1A981D010A2C002C5009 /* NSObject+JSKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSKVO.m"; sourceTree = "<group>"; };
+		704A1A9A1D010BF2002C5009 /* JSKVONotifyingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKVONotifyingPerson.h; sourceTree = "<group>"; };
+		704A1A9B1D010BF2002C5009 /* JSKVONotifyingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKVONotifyingPerson.m; sourceTree = "<group>"; };
 		705358601CA23D52001248C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		705358631CA25438001248C9 /* JSBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseVC.h; sourceTree = "<group>"; };
 		705358641CA25438001248C9 /* JSBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseVC.m; sourceTree = "<group>"; };
@@ -193,6 +216,10 @@
 		705B4EF11CE8AADE00DBD955 /* JSTableV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableV.m; sourceTree = "<group>"; };
 		705B4EF31CE8AB7600DBD955 /* JSBaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseTableVC.h; sourceTree = "<group>"; };
 		705B4EF41CE8AB7600DBD955 /* JSBaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseTableVC.m; sourceTree = "<group>"; };
+		705E42D41CFFBB8F009938EC /* NSObject+JSCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSCalculate.h"; sourceTree = "<group>"; };
+		705E42D51CFFBB8F009938EC /* NSObject+JSCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSCalculate.m"; sourceTree = "<group>"; };
+		7075606C1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseKnolowedgeVC.h; sourceTree = "<group>"; };
+		7075606D1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseKnolowedgeVC.m; sourceTree = "<group>"; };
 		707AE6121CF294CD00195C0F /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		707AE6131CF294CD00195C0F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		707AE6151CF29CFD00195C0F /* NSObject+JSProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSProperty.h"; sourceTree = "<group>"; };
@@ -257,8 +284,25 @@
 		70B8DC291CE1CFC4003B71B2 /* JSUMengVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSUMengVC.m; sourceTree = "<group>"; };
 		70C69C151CA269DA00FAD442 /* JSBaseRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseRootVC.h; sourceTree = "<group>"; };
 		70C69C161CA269DA00FAD442 /* JSBaseRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseRootVC.m; sourceTree = "<group>"; };
+		70DBB1971D0E3FC80054A6A6 /* flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
+		70DBB1991D0E420C0054A6A6 /* JSFlag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFlag.h; sourceTree = "<group>"; };
+		70DBB19A1D0E420C0054A6A6 /* JSFlag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFlag.m; sourceTree = "<group>"; };
+		70DBB19C1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTestRacSignal2ndVC.h; sourceTree = "<group>"; };
+		70DBB19D1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTestRacSignal2ndVC.m; sourceTree = "<group>"; };
+		70DBB1A41D112CBA0054A6A6 /* JSRACLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRACLoginVC.h; sourceTree = "<group>"; };
+		70DBB1A51D112CBA0054A6A6 /* JSRACLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRACLoginVC.m; sourceTree = "<group>"; };
+		70DBB1A91D113D930054A6A6 /* JSLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoginViewModel.h; sourceTree = "<group>"; };
+		70DBB1AA1D113D930054A6A6 /* JSLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoginViewModel.m; sourceTree = "<group>"; };
+		70DBB1AC1D1145AB0054A6A6 /* JSRequestVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRequestVM.h; sourceTree = "<group>"; };
+		70DBB1AD1D1145AB0054A6A6 /* JSRequestVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRequestVM.m; sourceTree = "<group>"; };
 		70E1C1041CA66705001472FA /* JSWebImgVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebImgVC.h; sourceTree = "<group>"; };
 		70E1C1051CA66705001472FA /* JSWebImgVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebImgVC.m; sourceTree = "<group>"; };
+		70FDF2991CFFBEB300E1496E /* JSBasisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBasisVC.h; sourceTree = "<group>"; };
+		70FDF29A1CFFBEB300E1496E /* JSBasisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBasisVC.m; sourceTree = "<group>"; };
+		70FDF29C1CFFBEF100E1496E /* JSFRPVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFRPVC.h; sourceTree = "<group>"; };
+		70FDF29D1CFFBEF100E1496E /* JSFRPVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFRPVC.m; sourceTree = "<group>"; };
+		70FDF2A61CFFC50900E1496E /* JSMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMan.h; sourceTree = "<group>"; };
+		70FDF2A71CFFC50900E1496E /* JSMan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMan.m; sourceTree = "<group>"; };
 		AC63089624E00BFE7EC8AFB6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C30E29C595B9EBE812771B22 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF49CECF6D28ABFA03037997 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,7 +378,6 @@
 				704520D71CA18242003BA652 /* Application */,
 				704520D81CA18242003BA652 /* Categories */,
 				704520D91CA18242003BA652 /* Controllers */,
-				704520DA1CA18242003BA652 /* Models */,
 				704520DB1CA18242003BA652 /* Resources */,
 				704520DC1CA18242003BA652 /* Supporting Files */,
 				704520DD1CA18242003BA652 /* Utils */,
@@ -375,25 +418,16 @@
 		704520D91CA18242003BA652 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				70E1C1031CA666DA001472FA /* 图片 */,
+				704878D11CF574E400EB8CED /* 基础 */,
+				70E1C1031CA666DA001472FA /* UI */,
 				705358611CA253BD001248C9 /* Base */,
 				705B4EEF1CE8A46200DBD955 /* 储存 */,
 				70B8DC241CE1C377003B71B2 /* 分享 */,
 				708DEF471CBB7C68008DFE92 /* 网络 */,
 				709C326D1CB92A0400D1D4EA /* runtime */,
-				7033E2061CA4CC43001EA080 /* 文字 */,
 				705358661CA25557001248C9 /* 侧栏 */,
-				705358621CA25418001248C9 /* Login */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		704520DA1CA18242003BA652 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				709C32711CB9E40F00D1D4EA /* runtime */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		704520DB1CA18242003BA652 /* Resources */ = {
@@ -438,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				704520E01CA182CC003BA652 /* main.m */,
+				70DBB1971D0E3FC80054A6A6 /* flags.plist */,
 				704878B21CF2B53000EB8CED /* status.plist */,
 				704520C11CA18140003BA652 /* Info.plist */,
 				705358601CA23D52001248C9 /* PrefixHeader.pch */,
@@ -486,6 +521,23 @@
 				704878CF1CF3D75400EB8CED /* JSParentTController.m */,
 			);
 			name = "父子控制器";
+			sourceTree = "<group>";
+		};
+		704878D11CF574E400EB8CED /* 基础 */ = {
+			isa = PBXGroup;
+			children = (
+				70DBB1A31D112C750054A6A6 /* rac实现的登陆界面（mvvm） */,
+				7075606C1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.h */,
+				7075606D1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.m */,
+				70FDF29F1CFFC48800E1496E /* 响应式编程 */,
+				704878D51CF576DF00EB8CED /* JSCaculateManager.h */,
+				704878D61CF576DF00EB8CED /* JSCaculateManager.m */,
+				705E42D41CFFBB8F009938EC /* NSObject+JSCalculate.h */,
+				705E42D51CFFBB8F009938EC /* NSObject+JSCalculate.m */,
+				70FDF2991CFFBEB300E1496E /* JSBasisVC.h */,
+				70FDF29A1CFFBEB300E1496E /* JSBasisVC.m */,
+			);
+			name = "基础";
 			sourceTree = "<group>";
 		};
 		705358611CA253BD001248C9 /* Base */ = {
@@ -563,13 +615,6 @@
 				704878C11CF2D6C600EB8CED /* Status.m */,
 				704878C31CF2D73000EB8CED /* NSObject+JSModel.h */,
 				704878C41CF2D73000EB8CED /* NSObject+JSModel.m */,
-			);
-			name = runtime;
-			sourceTree = "<group>";
-		};
-		709C32711CB9E40F00D1D4EA /* runtime */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			name = runtime;
 			sourceTree = "<group>";
@@ -669,9 +714,24 @@
 			name = "分享";
 			sourceTree = "<group>";
 		};
-		70E1C1031CA666DA001472FA /* 图片 */ = {
+		70DBB1A31D112C750054A6A6 /* rac实现的登陆界面（mvvm） */ = {
 			isa = PBXGroup;
 			children = (
+				70DBB1A41D112CBA0054A6A6 /* JSRACLoginVC.h */,
+				70DBB1A51D112CBA0054A6A6 /* JSRACLoginVC.m */,
+				70DBB1A91D113D930054A6A6 /* JSLoginViewModel.h */,
+				70DBB1AA1D113D930054A6A6 /* JSLoginViewModel.m */,
+				70DBB1AC1D1145AB0054A6A6 /* JSRequestVM.h */,
+				70DBB1AD1D1145AB0054A6A6 /* JSRequestVM.m */,
+			);
+			name = "rac实现的登陆界面（mvvm）";
+			sourceTree = "<group>";
+		};
+		70E1C1031CA666DA001472FA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				705358621CA25418001248C9 /* Login */,
+				7033E2061CA4CC43001EA080 /* 文字 */,
 				704878CA1CF3D68A00EB8CED /* 父子控制器 */,
 				7033E1C31CA3B6FD001EA080 /* JSImageVC.h */,
 				7033E1C41CA3B6FD001EA080 /* JSImageVC.m */,
@@ -686,7 +746,28 @@
 				705B4EE91CE8A33700DBD955 /* JSTestImgRTVC.h */,
 				705B4EEA1CE8A33700DBD955 /* JSTestImgRTVC.m */,
 			);
-			name = "图片";
+			name = UI;
+			sourceTree = "<group>";
+		};
+		70FDF29F1CFFC48800E1496E /* 响应式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				70FDF29C1CFFBEF100E1496E /* JSFRPVC.h */,
+				70FDF29D1CFFBEF100E1496E /* JSFRPVC.m */,
+				70DBB19C1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.h */,
+				70DBB19D1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.m */,
+				70DBB1991D0E420C0054A6A6 /* JSFlag.h */,
+				70DBB19A1D0E420C0054A6A6 /* JSFlag.m */,
+				704A1A941D0109F3002C5009 /* JSReactivePerson.h */,
+				704A1A951D0109F3002C5009 /* JSReactivePerson.m */,
+				70FDF2A61CFFC50900E1496E /* JSMan.h */,
+				70FDF2A71CFFC50900E1496E /* JSMan.m */,
+				704A1A971D010A2C002C5009 /* NSObject+JSKVO.h */,
+				704A1A981D010A2C002C5009 /* NSObject+JSKVO.m */,
+				704A1A9A1D010BF2002C5009 /* JSKVONotifyingPerson.h */,
+				704A1A9B1D010BF2002C5009 /* JSKVONotifyingPerson.m */,
+			);
+			name = "响应式编程";
 			sourceTree = "<group>";
 		};
 		C14069042C1EF911C3113C4B /* Pods */ = {
@@ -790,6 +871,7 @@
 				70B8DC201CE1BFEB003B71B2 /* UMSLoginViewController.xib in Resources */,
 				7033E1FF1CA3BFF8001EA080 /* ermilio_q90.webp in Resources */,
 				704878B31CF2B53000EB8CED /* status.plist in Resources */,
+				70DBB1981D0E3FC80054A6A6 /* flags.plist in Resources */,
 				70B8DC1D1CE1BFEB003B71B2 /* UMSCommentInputControlleriPad.xib in Resources */,
 				7033E1DA1CA3BFE7001EA080 /* ResourceWeibo.bundle in Resources */,
 				7033E1DE1CA3BFE7001EA080 /* google@2x.webp in Resources */,
@@ -898,17 +980,23 @@
 				70B21E711CA517D400457EF3 /* YYTableViewCell.m in Sources */,
 				70E1C1061CA66705001472FA /* JSWebImgVC.m in Sources */,
 				70B21E701CA517D400457EF3 /* YYTableView.m in Sources */,
+				70DBB1A61D112CBA0054A6A6 /* JSRACLoginVC.m in Sources */,
 				705358691CA255C9001248C9 /* JSSideVC.m in Sources */,
 				7033E2051CA4CB8F001EA080 /* JSTextVC.m in Sources */,
 				704520E41CA183AF003BA652 /* JSFMDBVC.m in Sources */,
 				70C69C171CA269DA00FAD442 /* JSBaseRootVC.m in Sources */,
+				704A1A961D0109F3002C5009 /* JSReactivePerson.m in Sources */,
+				70DBB1AB1D113D930054A6A6 /* JSLoginViewModel.m in Sources */,
 				709C32781CB9E74800D1D4EA /* JSRuntimeTestVC.m in Sources */,
 				707AE6171CF29CFD00195C0F /* NSObject+JSProperty.m in Sources */,
 				704878BF1CF2D64700EB8CED /* Picture.m in Sources */,
 				70B21E751CA517D400457EF3 /* YYFPSLabel.m in Sources */,
+				70FDF29E1CFFBEF100E1496E /* JSFRPVC.m in Sources */,
 				7053586C1CA25E78001248C9 /* JSLoginVC.m in Sources */,
+				705E42D61CFFBB8F009938EC /* NSObject+JSCalculate.m in Sources */,
 				707C44001CED92A500C5E548 /* JSTenStartVC.m in Sources */,
 				705358651CA25438001248C9 /* JSBaseVC.m in Sources */,
+				704A1A991D010A2C002C5009 /* NSObject+JSKVO.m in Sources */,
 				705B4EEB1CE8A33700DBD955 /* JSTestImgRTVC.m in Sources */,
 				70B8DC2A1CE1CFC4003B71B2 /* JSUMengVC.m in Sources */,
 				704878CD1CF3D6B400EB8CED /* JSChildTVC.m in Sources */,
@@ -916,16 +1004,21 @@
 				709C327B1CBA40AD00D1D4EA /* JSPerson.m in Sources */,
 				704878C51CF2D73000EB8CED /* NSObject+JSModel.m in Sources */,
 				708DEF4A1CBB7C97008DFE92 /* JSNetworkVC.m in Sources */,
+				704A1A9C1D010BF2002C5009 /* JSKVONotifyingPerson.m in Sources */,
 				70B21E731CA517D400457EF3 /* YYPhotoGroupView.m in Sources */,
 				704878C21CF2D6C600EB8CED /* Status.m in Sources */,
 				705B4EF21CE8AADE00DBD955 /* JSTableV.m in Sources */,
+				70FDF29B1CFFBEB300E1496E /* JSBasisVC.m in Sources */,
 				7033E2091CA4CE61001EA080 /* JSTextAttributeExampleVC.m in Sources */,
 				7033E1C51CA3B6FD001EA080 /* JSImageVC.m in Sources */,
 				70B21E621CA5140B00457EF3 /* JSAsyncTextVC.m in Sources */,
 				704878B91CF2CE8400EB8CED /* Status1.m in Sources */,
 				707AE6141CF294CD00195C0F /* UIImage+Image.m in Sources */,
+				70DBB19B1D0E420C0054A6A6 /* JSFlag.m in Sources */,
 				70B8DC271CE1C39F003B71B2 /* JSUMengShanreTestVC.m in Sources */,
+				7075606E1D0C1C0600C24BC6 /* JSBaseKnolowedgeVC.m in Sources */,
 				70B21E721CA517D400457EF3 /* YYControl.m in Sources */,
+				704878D71CF576DF00EB8CED /* JSCaculateManager.m in Sources */,
 				70B21E741CA517D400457EF3 /* YYSimpleWebViewController.m in Sources */,
 				704878D01CF3D75400EB8CED /* JSParentTController.m in Sources */,
 				707C44031CED987700C5E548 /* UITableView+JSTouch.m in Sources */,
@@ -934,8 +1027,11 @@
 				704878BE1CF2D64700EB8CED /* User.m in Sources */,
 				704878B61CF2B58600EB8CED /* NSObject+JSLog.m in Sources */,
 				704878C91CF305F200EB8CED /* JSPushVC.m in Sources */,
+				70DBB1AE1D1145AB0054A6A6 /* JSRequestVM.m in Sources */,
 				705B4EEE1CE8A41900DBD955 /* JSViewVC.m in Sources */,
 				700B00831CBA8E270003FC27 /* UIControl+JSAddition.m in Sources */,
+				70FDF2A81CFFC50900E1496E /* JSMan.m in Sources */,
+				70DBB19E1D0E550A0054A6A6 /* JSTestRacSignal2ndVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1065,7 +1161,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BuildingElementsCollecting/UMSocial_Sdk_5.1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = buildingeles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushTest.xhl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
@@ -1087,7 +1183,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BuildingElementsCollecting/UMSocial_Sdk_5.1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = buildingeles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pushTest.xhl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
